@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./assets/images/logo.png" type="image/x-icon" rel="icon">
+  <title>Home | Vinra</title>
+  <!-- css library -->
+  <link href="./assets/library/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="./assets/library/fa/css/all.min.css" rel="stylesheet">
+  <link href="./assets/library/animate/animate.min.css" rel="stylesheet">
+  <link href="./assets/library/swiper/css/swiper.css" rel="stylesheet">
+  <!-- custom css -->
+  <link href="./assets/library/custom/css/main.css" rel="stylesheet">
+</head>
+<body>
+  <!-- header -->
+  <nav id="header" class="navbar navbar-expand-md navbar-light shadow-sm fixed-top navbar-custom">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img class="img-fluid brand-img" src="./assets/images/logo.png" alt="">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarScroll">
+        <ul class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 250px;">
+          <li class="nav-item px-2">
+            <a class="nav-link active" href="index.html">HOME</a>
+          </li>
+          <li class="nav-item px-2">
+            <a class="nav-link" href="packages.html">PACKAGES</a>
+          </li>
+          <li class="nav-item px-2 drop-toggle">
+            <a class="nav-link" href="javascript:;">SERVICES <i class="fa-solid fa-caret-down fa-lg"></i></a>
+            <ul class="drop-menu">
+              <li class="drop-list">
+                <a class="nav-link drop-link" href="services/construction.html">CONSTRUCTION</a>
+              </li>
+              <li class="drop-list">
+                <a class="nav-link drop-link" href="services/architecture.html">ARCHITECTURE</a>
+              </li>
+              <li class="drop-list">
+                <a class="nav-link drop-link" href="services/green-homes.html">GREEN HOMES</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item px-2">
+            <a class="nav-link" href="our-projects.html">OUR PROJECTS</a>
+          </li>
+          <li class="nav-item px-2">
+            <a class="nav-link" href="about-us.html">ABOUT US</a>
+          </li>
+          <li class="nav-item px-2">
+            <a class="nav-link" href="contact.html">CONTACT</a>
+          </li>
+          <li class="nav-item px-2">
+            <a class="btn btn-primary" href="javascript:;" data-bs-toggle="modal" data-bs-target="#get-quote">GET QUOTE</a>
+          </li>
+        </ul>  
+      </div>
+    </div>
+  </nav>
+  <section class="main">
+    <!-- landing -->
+    <section id="landing">
+      <div id="landing-carousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./assets/images/landing/banner-1.png" class="img-fluid d-block w-100" alt="">
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/images/landing/banner-2.png" class="img-fluid d-block w-100" alt="">
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/images/landing/banner-3.png" class="img-fluid d-block w-100" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- expertise -->
+    <section id="expertise">
+      <div class="container">
+        <h3 class="text-center fw-bold mb-3">Our Expertise</h3>
+        <div class="expertise-block">
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+              <div class="choose-content">
+                <div class="flip-card">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <img class="img-fluid" src="./assets/images/expertise/construction.png" alt="">
+                      <p class="pt-3">
+                        HOME CONSTRUCTION
+                      </p>
+                    </div>
+                    <div class="flip-card-back">
+                      <p>
+                        Independent House/Villa Constructions with 
+                        High standards and Quality material.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+              <div class="choose-content">
+                <div class="flip-card">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <img class="img-fluid" src="./assets/images/expertise/architecture.png" alt="">
+                      <p class="pt-3">
+                        ARCHITECTURE & STRUCTURAL DESIGN
+                      </p>
+                    </div>
+                    <div class="flip-card-back">
+                      <p>
+                        Best in class Architecture includes Floor plans, 
+                        3D Elevations and Structural drawings.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+              <div class="choose-content">
+                <div class="flip-card">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <img class="img-fluid" src="./assets/images/expertise/interior.png" alt="">
+                      <p class="pt-3">
+                        INTERIOR DESIGNING
+                      </p>
+                    </div>
+                    <div class="flip-card-back">
+                      <p>
+                        Best in class Interior designs and Great Value.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+              <div class="choose-content">
+                <div class="flip-card">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <img class="img-fluid" src="./assets/images/expertise/management.png" alt="">
+                      <p class="pt-3">
+                        PLANING & MANAGEMENT
+                      </p>
+                    </div>
+                    <div class="flip-card-back">
+                      <p>
+                        A good construction plan is the basis for 
+                        developing the budget and the schedule for work.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- how-it-works -->
+    <section id="how-it-works">
+      <div class="container">
+        <h3 class="fw-bold text-center mb-3">
+          How It Works
+        </h3>
+        <div class="row align-items-center justify-content-center">
+          <div class="col-xs-12 col-sm-12 col-md-10 col-lg-8 col-xl-7 col-xxl-7">
+            <div class="work-block">
+              <div class="slider-container">
+                <div class="swiper-container card-slider" id="work-slider">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="work-img">
+                        <img class="img-fluid" src="./assets/images/how-it-works/consultaion.png" alt="">
+                      </div>
+                      <div class="work-body">
+                        <h5 class="mb-2">
+                          1. Consultation
+                        </h5>
+                        <p class="m-0">
+                          Raise an enquiry or call us on <a class="text-decoration-none text-primary" href="tel:+91 7802-80-80-80">+91 7802-80-80-80</a>, our Technical expert 
+                          will get in touch with you and take all your detailed requirements and 
+                          provide you the estimation for your requirement.
+                        </p>
+                      </div>  
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="work-img">
+                        <img class="img-fluid" src="./assets/images/how-it-works/review.png" alt="">
+                      </div>
+                      <div class="work-body">
+                        <h5 class="mb-2">
+                          2. Review our work
+                        </h5>
+                        <p class="m-0">
+                          Visit our Projects and get to know about our work and quality,
+                          come to office, discuss, and close the deal. 
+                        </p>
+                      </div>        
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="work-img">
+                        <img class="img-fluid" src="./assets/images/how-it-works/order.png" alt="">
+                      </div>
+                      <div class="work-body">
+                        <h5 class="mb-2">
+                          3. Place the order
+                        </h5>
+                        <p class="m-0">
+                          Find your good day and sign the transparent construction contract. 
+                          It helps us to proceed further with Design
+                        </p>
+                      </div>       
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="work-img">
+                        <img class="img-fluid" src="./assets/images/how-it-works/design.png" alt="">
+                      </div>
+                      <div class="work-body">
+                        <h5 class="mb-2">
+                          4. Design
+                        </h5>
+                        <p class="m-0">
+                          Our experienced Architect will provide you the quality Designs and 
+                          Architecture as per your requirements and inputs. Discuss and finalize 
+                          the Design.
+                        </p>
+                      </div>       
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="work-img">
+                        <img class="img-fluid" src="./assets/images/how-it-works/tracking.png" alt="">
+                      </div>
+                      <div class="work-body">
+                        <h5 class="mb-2">
+                          5. Execution & Tracking
+                        </h5>
+                        <p class="m-0">
+                          Project execution will be started. Our project management team will be 
+                          updating you the daily work progress in the form of Photos and Videos.
+                        </p>
+                      </div>       
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="work-img">
+                        <img class="img-fluid" src="./assets/images/how-it-works/move.png" alt="">
+                      </div>
+                      <div class="work-body">
+                        <h5 class="mb-2">
+                          6. Move in
+                        </h5>
+                        <p class="m-0">
+                          We make sure the project completes on time without any hassles. 
+                          You can Happily move into your Dream Home. 
+                        </p>
+                      </div>       
+                    </div>
+                  </div>
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-button-prev"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>    
+      </div>
+    </section>
+    <!-- why choose -->
+    <section id="why-choose">
+      <div class="container">
+        <h3 class="text-center fw-bold mb-3">Why choose VINRA?</h3>
+        <div class="choose-block">
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 col-xxl-3">
+              <div class="choose-content align-items-center">
+                <img class="img-fluid" src="./assets/images/why-choose/1.png" alt="">
+                <p class="pt-3">
+                  No subcontractors
+                </p>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 col-xxl-3">
+              <div class="choose-content align-items-center">
+                <img class="img-fluid" src="./assets/images/why-choose/2.png" alt="">
+                <p class="pt-3">
+                  Professional Project Management
+                </p>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 col-xxl-3">
+              <div class="choose-content align-items-center">
+                <img class="img-fluid" src="./assets/images/why-choose/3.png" alt="">
+                <p class="pt-3">
+                  Unique and <br/> modern designs
+                </p>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 col-xxl-3">
+              <div class="choose-content align-items-center">
+                <img class="img-fluid" src="./assets/images/why-choose/4.png" alt="">
+                <p class="pt-3">
+                  Quality
+                </p>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 col-xxl-3">
+              <div class="choose-content align-items-center">
+                <img class="img-fluid" src="./assets/images/why-choose/5.png" alt="">
+                <p class="pt-3">
+                  Process
+                </p>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 col-xxl-3">
+              <div class="choose-content align-items-center">
+                <img class="img-fluid" src="./assets/images/why-choose/6.png" alt="">
+                <p class="pt-3">
+                  Adherence to Timelines
+                </p>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 col-xxl-3">
+              <div class="choose-content align-items-center">
+                <img class="img-fluid" src="./assets/images/why-choose/7.png" alt="">
+                <p class="pt-3">
+                  Competitive Pricing
+                </p>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 col-xxl-3">
+              <div class="choose-content align-items-center">
+                <img class="img-fluid" src="./assets/images/why-choose/8.png" alt="">
+                <p class="pt-3">
+                  High-Quality Design
+                </p>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 col-xxl-3">
+              <div class="choose-content align-items-center">
+                <img class="img-fluid" src="./assets/images/why-choose/9.png" alt="">
+                <p class="pt-3">
+                  Transparency
+                </p>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 col-xxl-3">
+              <div class="choose-content align-items-center">
+                <img class="img-fluid" src="./assets/images/why-choose/10.png" alt="">
+                <p class="pt-3">
+                  Brand/Trustworthy
+                </p>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 col-xxl-3">
+              <div class="choose-content align-items-center">
+                <img class="img-fluid" src="./assets/images/why-choose/11.png" alt="">
+                <p class="pt-3">
+                  Professional customer service
+                </p>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 col-xxl-3">
+              <div class="choose-content align-items-center">
+                <img class="img-fluid" src="./assets/images/why-choose/12.png" alt="">
+                <p class="pt-3">
+                  Hassle-free service
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>    
+      </div>
+    </section>
+    <!-- faq -->
+    <section id="faq">
+      <div class="container">
+        <h3 class="fw-bold text-center mb-3">
+          Frequently Asked Questions
+        </h3>
+        <div class="faq-block">
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+              <div class="faq-content">
+                <div class="accordion" id="faq-one">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="lh-one">
+                      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#lc-one" aria-expanded="true" aria-controls="lc-one">
+                        <h5>
+                          What services are included in vinra Turnkey solutions?
+                        </h5>
+                      </button>
+                    </h2>
+                    <div id="lc-one" class="accordion-collapse collapse" aria-labelledby="lh-one" data-bs-parent="#faq-one">
+                      <div class="accordion-body">
+                        <p>
+                          When you choose vinra, we keep you covered right from design, plan approval, 
+                          site execution, and handover.
+                        </p>
+                        <p>
+                          On the whole, you can totally rely on us, as your One-Stop Building partner for 
+                          all your construction and interior needs.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="lh-two">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#lc-two" aria-expanded="false" aria-controls="lc-two">
+                        <h5>
+                          What is the overall procedure after you submit your contact details?
+                        </h5>
+                      </button>
+                    </h2>
+                    <div id="lc-two" class="accordion-collapse collapse" aria-labelledby="lh-two" data-bs-parent="#faq-one">
+                      <div class="accordion-body">
+                        <p>
+                          Once when you've initiated the first step by call or contact form. 
+                          Our Project Ninja comes to your rescue and takes care of all your project 
+                          requirements in offline or online mode.
+                        </p>
+                        <p>
+                          If you're good to go with us, we take it further by signing the agreement. 
+                          Then a customized floor plan is prepared as per your inputs. 
+                          Once you've given a green signal, we start the On-Site construction work.
+                        </p>
+                        <p>
+                          The entire construction activity takes place smoothly with timely work schedules. 
+                          During the course of the project, we help you with 12/7 customer support.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="lh-three">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#lc-three" aria-expanded="false" aria-controls="lc-three">
+                        <h5>
+                          Is there any consultation or site visit charge?
+                        </h5>
+                      </button>
+                    </h2>
+                    <div id="lc-three" class="accordion-collapse collapse" aria-labelledby="lh-three" data-bs-parent="#faq-one">
+                      <div class="accordion-body">
+                        <p>
+                          All your consultations and site visits are provided free of cost. 
+                          But, if the site is in far proximity, a very basic nominal fee would be charged.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="lh-four">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#lc-four" aria-expanded="false" aria-controls="lc-four">
+                        <h5>
+                          Do vinra take commercial projects?
+                        </h5>
+                      </button>
+                    </h2>
+                    <div id="lc-four" class="accordion-collapse collapse" aria-labelledby="lh-four" data-bs-parent="#faq-one">
+                      <div class="accordion-body">
+                        <p>
+                          Yes, we do take up commercial projects where the prices start from Rs.1,400 per sq. ft.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+              <div class="faq-content">
+                <div class="accordion" id="faq-two">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="rh-one">
+                      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#rc-one" aria-expanded="true" aria-controls="rc-one">
+                        <h5>
+                          Will there be any dedicated engineer allotted to my project?
+                        </h5>
+                      </button>
+                    </h2>
+                    <div id="rc-one" class="accordion-collapse collapse" aria-labelledby="rh-one" data-bs-parent="#faq-two">
+                      <div class="accordion-body">
+                        <p>
+                          Yes, we do assign an experienced Site Engineer for every project. 
+                          He will always keep you posted via Daily WhatsApp updates.
+                        </p>
+                        <p>
+                          Simultaneously the Site Engineer will coordinate with our Architect and Labor 
+                          team for effective On-Site execution.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="rh-two">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#rc-two" aria-expanded="false" aria-controls="rc-two">
+                        <h5>
+                          How do you assure and control the quality of construction?
+                        </h5>
+                      </button>
+                    </h2>
+                    <div id="rc-two" class="accordion-collapse collapse" aria-labelledby="rh-two" data-bs-parent="#faq-two">
+                      <div class="accordion-body">
+                        <p>
+                          We always use trusted and certified brands for all your material and fixture needs. 
+                          Exclusive 130+ checklists are carried out by our Quality Manager at every stage.
+                        </p>
+                        <p>
+                          Our customers can always verify with us at any stage of procurement activity with 
+                          our Site Engineer via WhatsApp or physically at the construction site.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="rh-three">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#rc-three" aria-expanded="false" aria-controls="rc-three">
+                        <h5>What are the types of drawings we provide?</h5>
+                      </button>
+                    </h2>
+                    <div id="rc-three" class="accordion-collapse collapse" aria-labelledby="rh-three" data-bs-parent="#faq-two">
+                      <div class="accordion-body">
+                        <p>
+                          Our in-house team of Architects and Structural Engineers collaboratively work and 
+                          provides you with a Conceptual Floorplan, Working Plan,3D Elevation, Section 
+                          Drawings, Schedule of Opening, Electrical & Plumbing Layouts, and Structural 
+                          Drawing From Footing to Each slab.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="rh-four">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#rc-four" aria-expanded="false" aria-controls="rc-four">
+                        <h5>
+                          How do I know about the materials used in constructing my home?
+                        </h5>
+                      </button>
+                    </h2>
+                    <div id="rc-four" class="accordion-collapse collapse" aria-labelledby="rh-four" data-bs-parent="#faq-two">
+                      <div class="accordion-body">
+                        <p>
+                          During the material procurement stage, we always keep our Clients informed about 
+                          the cost and quality of the products via WhatsApp. Valid Bill Payments for each 
+                          procured stage can always be reviewed by our clients anytime.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>  
+      </div>
+    </section>
+    <!-- brands -->
+    <!-- <section id="brands">
+      <div class="container">
+        <h3 class="fw-bold text-center mb-3">
+          Trusted Brands
+        </h3>
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <div class="swiper-block">
+              <div class="slider-container">
+                <div class="swiper-container card-slider" id="brands-slider">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <img class="img-fluid" src="./assets/images/brands/ashirvad.svg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                      <img class="img-fluid" src="./assets/images/brands/asian.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                      <img class="img-fluid" src="./assets/images/brands/astral.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                      <img class="img-fluid" src="./assets/images/brands/berger.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                      <img class="img-fluid" src="./assets/images/brands/finolex.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                      <img class="img-fluid" src="./assets/images/brands/fixit.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                      <img class="img-fluid" src="./assets/images/brands/fosroc.svg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                      <img class="img-fluid" src="./assets/images/brands/gm.jfif" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+    <!-- testimonials -->
+    <section id="testimonials">
+      <div class="container">
+        <h3 class="fw-bold text-center mb-3">
+          Our Customers 
+          <i class="fa-solid fa-heart text-primary"></i> Us
+        </h3>
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <div class="swiper-block">
+              <div class="slider-container">
+                <div class="swiper-container card-slider" id="testimonials-slider">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="card">
+                        <img class="card-image" src="./assets/images/testimonials/testimonial-1.jpg" alt="alternative">
+                        <div class="card-body">
+                          <p class="testimonial-text">Tortor sodales eget. Vivamus imperdiet leo eu risus tincidunt uris. Proin placerat, urna hendrerit placerat erase convallis</p>
+                          <p class="testimonial-author">Jude Thorn - Designer</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="card">
+                        <img class="card-image" src="./assets/images/testimonials/testimonial-2.jpg" alt="alternative">
+                        <div class="card-body">
+                            <p class="testimonial-text">Eros volutpat ante mauris euismod sem, ut varius nisi lectus in urna. Integer luctus, nunc eget maximus intem, orci risus</p>
+                            <p class="testimonial-author">Roy Smith - Developer</p>
+                        </div>
+                      </div>        
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="card">
+                        <img class="card-image" src="./assets/images/testimonials/testimonial-3.jpg" alt="alternative">
+                        <div class="card-body">
+                            <p class="testimonial-text">Sed congue ex quam, sit amet venenatis dolor lacinia vulputate. Nunc pulvinar ex ex, sit amet scelerisque tellus pretium semper</p>
+                            <p class="testimonial-author">Marsha Singer - Marketer</p>
+                        </div>
+                      </div>        
+                    </div>
+                  </div>
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-button-prev"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>    
+      </div>
+    </section>
+    <!-- consultation -->
+    <section id="consultation">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-xs-12 col-sm-6 col-md-5 col-lg-7 col-xl-7 col-xxl-7">
+            <div class="consult-block text-left">
+              <h3 class=" mb-3">
+                Hire our Trusted construction Service
+              </h3>
+              <div class="row align-items-center">
+                <div class="col-xs-12 col-xs-12 col-md-10 col-lg-6 col-xl-4">
+                  <p class="mb-4">
+                    <i class="fa fa-home me-3 text-primary"></i>Quality Homes
+                  </p>
+                </div>
+                <div class="col-xs-12 col-xs-12 col-md-10 col-lg-6 col-xl-4">
+                  <p class="mb-4">
+                    <i class="fa fa-eye me-3 text-primary"></i>Transparent Service
+                  </p>
+                </div>
+                <div class="col-xs-12 col-xs-12 col-md-10 col-lg-6 col-xl-4">
+                  <p class="mb-4">
+                    <i class="fa fa-inr me-3 text-primary"></i>Great Value
+                  </p>
+                </div>
+              </div>    
+              <button class="btn btn-primary" href="">LETS BUILD</button>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-7 col-lg-5 col-xl-5 col-xxl-5">
+            <div class="video-block text-center">
+              <iframe 
+                src="https://www.youtube.com/embed/g4kHOxTT68I">
+              </iframe> 
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>          
+    <!-- footer -->
+    <section id="footer">
+      <div class="container pt-4 pb-1 pt-4">
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+            <div class="comp-info">
+              <h1 class="m-0 py-3 title-brand">VINRA</h1>
+              <div class="d-flex py-3 sm-content">
+                <a class="btn btn-secondary me-2" target="_blank" href="https://www.instagram.com/">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a class="btn btn-secondary me-2" target="_blank" href="https://www.youtube.com/channel/">
+                  <i class="fab fa-youtube"></i>
+                </a>
+                <a class="btn btn-secondary me-2" target="_blank" href="https://www.facebook.com/">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a class="btn btn-secondary me-2" target="_blank" href="https://www.linkedin.com/in/">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </div>
+              <div class="link-content py-3 d-flex">
+                <div class="left-link px-3">
+                  <p class="mb-2">
+                    <i class="fa-solid fa-chevron-right text-primary"></i>
+                    <a class="btn btn-link text-decoration-none text-secondary" href="index.html">Home</a>
+                  </p>
+                  <p class="mb-2">
+                    <i class="fa-solid fa-chevron-right text-primary"></i>
+                    <a class="btn btn-link text-decoration-none text-secondary" href="our-projects.html">Our Projects</a>
+                  </p>
+                  <p class="mb-2">
+                    <i class="fa-solid fa-chevron-right text-primary"></i>
+                    <a class="btn btn-link text-decoration-none text-secondary" href="packages.html">Packages</a>
+                  </p>
+                </div>
+                <div class="right-link px-3">
+                  <p class="mb-2">
+                    <i class="fa-solid fa-chevron-right text-primary"></i>
+                    <a class="btn btn-link text-decoration-none text-secondary" href="about-us.html">About Us</a>
+                  </p>
+                  <p class="mb-2">
+                    <i class="fa-solid fa-chevron-right text-primary"></i>
+                    <a class="btn btn-link text-decoration-none text-secondary" href="contact.html">Contact</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+            <div class="contact-content pt-3">
+              <h3 class="fw-bold m-0 pb-3 my-3">Contact Info</h3>
+              <p class="mb-4">
+                <i class="fa fa-envelope me-3 text-primary"></i>info@vinragroup.com
+              </p>
+              <hr />
+              <p class="mb-3">
+                <i class="fa fa-phone-alt me-3 text-primary"></i>+91 888-489-8765
+              </p>
+              <p class="mb-4">
+                <i class="fa fa-phone-alt me-3 text-primary"></i>+91 921-222-2900
+              </p>
+              <hr />
+              <div class="pt-2">
+                <p class="mb-1 addr-one">
+                  <i class="fa fa-map-marker-alt me-3 text-primary"></i>
+                  Gangadhar Chetty Road,
+                </p>
+                <p class="mb-3 ms-4 addr-three">
+                  Bangalore
+                </p>
+              </div>
+            </div>  
+          </div>
+        </div>
+      </div>
+      <div class="all-rights">
+        <div class="container pt-3 pb-3">
+          <div class="content">
+            <p class="m-0 text-center">© 2022 <span class="text-primary">www.vinra.com</span> all rights reserved</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <a href="#" class="scroll-top d-flex text-white align-items-center justify-content-center">
+      <i class="fa-solid fa-arrow-up"></i>
+    </a>
+    <!-- get quote modal -->
+    <section class="modal fade" id="get-quote" data-bs-backdrop="static" tabindex="-1" aria-labelledby="quote-header-label" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="quote-header-label">Get Quote</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form method="post" action="javascript:;">
+              <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-10 offset-md-1 col-lg-5 offset-lg-1 col-xl-5 offset-xl-1 col-xxl-5 offset-xxl-1">
+                  <div class="mb-3">
+                    <label class="form-label">Name<span class="text-danger"> * </span></label>
+                    <input type="text" class="form-control" name="name" id="name" autocomplete="off" onfocusin="resetErrMsg(this)">
+                    <small id="name_span" class="text-danger"></small>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-10 offset-md-1 col-lg-5 offset-lg-0 col-xl-5 offset-xl-0 col-xxl-5 offset-xxl-0">
+                  <div class="mb-3">
+                    <label class="form-label">Email ID<span class="text-danger"> * </span></label>
+                    <input type="text" class="form-control" name="email" id="email" autocomplete="off" onfocusin="resetErrMsg(this)">
+                    <small id="email_span" class="text-danger"></small>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-10 offset-md-1 col-lg-5 offset-lg-1 col-xl-5 offset-xl-1 col-xxl-5 offset-xxl-1">
+                  <div class="mb-3">
+                    <label class="form-label">Phone Number<span class="text-danger"> * </span></label>
+                    <input type="text" class="form-control" name="phone" id="phone" autocomplete="off" onfocusin="resetErrMsg(this)">
+                    <small id="phone_span" class="text-danger"></small>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-10 offset-md-1 col-lg-5 offset-lg-0 col-xl-5 offset-xl-0 col-xxl-5 offset-xxl-0">
+                  <div class="mb-3">
+                    <label class="form-label">Location<span class="text-danger"> * </span></label>
+                    <input type="text" class="form-control" name="location" id="location" autocomplete="off" onfocusin="resetErrMsg(this)">
+                    <small id="location_span" class="text-danger"></small>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-10 offset-md-1 col-lg-10 offset-lg-1 col-xl-10 offset-xl-1 col-xxl-10 offset-xxl-1">
+                  <div class="mb-3">
+                    <label class="form-label">Services<span class="text-danger"> * </span></label>
+                    <select class="form-select" name="service" id="service" onfocusin="resetErrMsg(this)">
+                      <option value="Construction" selected>Construction</option>
+                      <option value="Interior Design">Interior Design</option>
+                      <option value="Renovations">Renovations</option>
+                      <option value="Commertial">Commertial</option>
+                      <option value="Industrial">Industrial</option>
+                    </select>
+                    <small id="service_span" class="text-danger"></small>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-10 offset-md-1 col-lg-10 offset-lg-1 col-xl-10 offset-xl-1 col-xxl-10 offset-xxl-1">
+                  <div class="mb-3">
+                    <label class="form-label">Message<span class="text-danger"> * </span></label>
+                    <textarea class="form-control" name="message" id="message" rows="6" onfocusin="resetErrMsg(this)"></textarea>
+                    <small id="message_span" class="text-danger"></small>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-10 offset-md-1 col-lg-8 offset-lg-2 col-xl-8 offset-xl-2 col-xxl-8 offset-xxl-2">
+                  <div class="mt-3 mb-3 d-flex">
+                    <button type="button" class="btn btn-secondary form-control me-3" data-bs-dismiss="modal">CLOSE</button>
+                    <button type="submit" class="btn btn-primary form-control get-quote" name="get_quote" onclick="getQuote()">
+                      <span class="spinner-border spinner-border-sm visually-hidden" role="status" aria-hidden="true"></span>
+                      SUBMIT
+                    </button>
+                  </div>
+                </div>  
+              </div>  
+            </form>
+          </div>
+          <div class="modal-footer" hidden="true"></div>
+        </div>
+      </div>
+    </section>
+    <!-- quote msg modal -->
+    <section class="modal fade" id="quote-msg" data-bs-backdrop="static" tabindex="-1" aria-labelledby="quote-header-label" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title quote-msg-title" id="quote-header-label"></h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p class="quote-msg-content"></p>
+          </div>
+          <div class="modal-footer" hidden="true"></div>
+        </div>
+      </div>
+    </section>
+  </section>  
+  <!-- js library -->
+  <script src="./assets/library/jquery/jquery.min.js"></script>
+  <script src="./assets/library/bootstrap/js/bootstrap.min.js"></script>
+  <script src="./assets/library/fa/js/all.min.js"></script>
+  <script src="./assets/library/swiper/js/swiper.min.js"></script>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <!-- custom js -->
+  <script src="./assets/library/custom/js/main.js"></script>
+</body>
+</html>
