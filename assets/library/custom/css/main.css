@@ -473,14 +473,17 @@ a, a:hover, a:focus{
 /* brands */
 #brands {
   width: 100%;
-	background-color: #ffffff;
+	background: url("../../../images/why-choose/backgroud.png");
 }
 #brands .container{
   padding-top: 30px;
   padding-bottom: 30px;
 }
 #brands .swiper-block{
-  padding: 20px 15px 20px 15px;
+  padding: 25px 15px 25px 15px;
+}
+#brands .swiper-container{
+  padding: 25px 20px;
 }
 
 /* testimonials */

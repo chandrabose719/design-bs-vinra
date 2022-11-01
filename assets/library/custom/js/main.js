@@ -1,9 +1,9 @@
 $(document).ready(function(){
   
   // initiate the wow
-  // new WOW().init();
+  new WOW().init();
 
-  // swiper slide for testomonials 
+  // swiper slide for testimonials 
   new Swiper('#testimonials-slider', {
     autoplay: {
       delay: 7500,
@@ -52,28 +52,28 @@ $(document).ready(function(){
   });
 
   // swiper slide for brands
-  // new Swiper('#brands-slider', {
-  //   autoplay: {
-  //     delay: 400000000,
-  //     disableOnInteraction: false
-  //   },
-  //   loop: true,
-  //   navigation: {
-  //     nextEl: '.swiper-button-next',
-  //     prevEl: '.swiper-button-prev'
-  //   },
-  //   slidesPerView: 5,
-  //   spaceBetween: 70,
-  //   breakpoints: {
-  //     767: {
-  //       slidesPerView: 1
-  //     },
-  //     991: {
-  //       slidesPerView: 1,
-  //       spaceBetween: 40
-  //     }
-  //   }
-  // });
+  new Swiper('#brands-slider-one, #brands-slider-two', {
+    autoplay: {
+      delay: 1000,
+      disableOnInteraction: false
+    },
+    loop: true,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev'
+    },
+    slidesPerView: 5,
+    spaceBetween: 70,
+    breakpoints: {
+      767: {
+        slidesPerView: 1
+      },
+      991: {
+        slidesPerView: 1,
+        spaceBetween: 40
+      }
+    }
+  });
 
   // scroll to top  
   const scrollTop = document.querySelector('.scroll-top');
@@ -338,6 +338,102 @@ function quoteMsg(msg){
   $('.quote-msg-title').html(title);
   $('.quote-msg-content').html(content);
   $("#quote-msg").modal('show');
+}
+
+async function projectQuote(){
+  var name = $('#name').val();
+  var email = $('#email').val();
+  var phone = $('#phone').val();
+  var obj = {
+    name: name,
+    email: email, 
+    phone: phone
+  };
+  // validation
+  var validation = projQuoteValidation(obj);
+
+  if(validation == false){
+    var btnName = ".project-quote"
+    btnLoader(btnName, true);
+    var body = projQuoteTable(obj);
+    console.log("table body: ", body);
+    btnLoader(btnName, false);
+    resetQuote();
+    $("#project-quote").modal('hide');
+    projQuoteMsg(true);
+  }  
+};
+
+function projQuoteValidation(obj){
+  var validation = false;
+  if(obj.name == ''){
+    var id = '#name_span';
+    var msg = 'Name should not empty!';
+    showErrMsg(id, msg);
+    var validation = true;
+  }
+  if(obj.name != '' && obj.name.length <= 2){
+    var id = '#name_span';
+    var msg = 'Name should be more than 2 characters!';
+    showErrMsg(id, msg);
+    var validation = true;
+  }
+  if(
+    obj.email == '' || 
+    obj.email.indexOf("@", 0) < 0 || 
+    obj.email.indexOf(".", 0) < 0
+  ){
+    var id = '#email_span';
+    var msg = 'Please enter a valid Email!';
+    showErrMsg(id, msg);
+    var validation = true;
+  }
+  if(obj.phone == '' || obj.phone.length != 10){
+    var id = '#phone_span';
+    var msg = 'Please enter a valid Phone number!';
+    showErrMsg(id, msg);
+    var validation = true;
+  }
+  return validation;
+};
+
+function projQuoteTable(obj){
+  var table = `
+    <table style='width:100%;border: 1px solid black;border-radius: 10px;'>
+      <tr>
+        <th style='border: 1px solid black;border-radius: 10px; padding: 5px 8px;'>Name</th>
+        <th style='border: 1px solid black;border-radius: 10px; padding: 5px 8px;'>Email</th>
+        <th style='border: 1px solid black;border-radius: 10px; padding: 5px 8px;'>Phone number</th>
+      </tr>
+      <tr>
+        <td style='border: 1px solid black;border-radius: 10px; padding: 5px 8px;text-align:center;'>
+        `+ obj.name +`
+        </td>
+        <td style='border: 1px solid black;border-radius: 10px; padding: 5px 8px;text-align:center;'>
+        `+ obj.email +`
+        </td>
+        <td style='border: 1px solid black;border-radius: 10px; padding: 5px 8px;text-align:center;'>
+        `+ obj.phone +`
+        </td>
+      </tr>
+    </table>
+  `;
+  return table;
+};
+
+function projQuoteMsg(msg){
+  var title;
+  var content;
+  if(msg){
+    title = "Success";
+    content = "Quote sent successfully!";
+  }else{
+    title = "Error";
+    content = "technical issue, try again later!";
+  }
+  $('.proj-quote-msg-title').html(title);
+  $('.proj-quote-msg-content').html(content);
+  $("#proj-quote-msg").modal('show');
 }
 
 function resetQuote(){
